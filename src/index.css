@@ -11,15 +11,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  
 }
 
-.body {
+body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   align-items: stretch;
-  justify-content: space-around;
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
@@ -86,6 +84,7 @@ button:focus-visible {
 }
 
 .footerBar {
+  align-self: flex-end;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
