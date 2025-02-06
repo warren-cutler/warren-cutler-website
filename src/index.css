@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #04243a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -97,6 +97,9 @@ button:focus-visible {
   margin-top: 10px;
   padding-left: 5vw;
   padding-right: 5vw;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1em;
 }
 
 .externalLinks {
@@ -130,4 +133,9 @@ button:focus-visible {
   border-radius: 20px;
   background-color: gray;
   margin: 10px;
+  max-width: 500px;
+}
+
+.logoLinks {
+  font-size: 0.5em;
 }

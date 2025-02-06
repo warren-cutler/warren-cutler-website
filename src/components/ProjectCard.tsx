@@ -9,6 +9,7 @@ export const ProjectCard = (project: Project) => {
             <p>{project.name}</p>
             <p>{project.description}</p>
             <p>{project.linkUrl ? project.linkUrl : ''}</p>
+            <p>{project.status}</p>
         </div>
     )
 }
