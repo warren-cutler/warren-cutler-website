@@ -21,7 +21,7 @@ export const Navbar = () => {
         </Link>
         <Link to='/about'>
           <button>About Me</button>
-        </Link>{' '}
+        </Link>
       </div>
     </div>
   );

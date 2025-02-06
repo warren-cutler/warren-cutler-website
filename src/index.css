@@ -139,3 +139,11 @@ button:focus-visible {
 .logoLinks {
   font-size: 0.5em;
 }
+
+.companyInfo {
+  display: flex;
+}
+
+.roleInfo {
+  display: flex;
+}

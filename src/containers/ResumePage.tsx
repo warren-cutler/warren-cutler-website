@@ -13,6 +13,7 @@ export const ResumePage = () => {
       {jobs.map((job, idx) => {
         return <JobCard key={'Job-' + idx} {...job}></JobCard>;
       })}
+      <button>Full Resume (PDF)</button>
     </div>
   );
 };
