@@ -12,6 +12,8 @@ export type Project = {
 export type Job = {
   id: number;
   company: string;
+  companyLogo: string;
+  companyUrl: string;
   location: string;
   roles: Role[];
 }

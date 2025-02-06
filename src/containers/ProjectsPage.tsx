@@ -1,10 +1,9 @@
 //types
 import { Project } from '../types';
-
+//data
+import { projectsData } from '../data/projectsData';
 //components
 import { ProjectCard } from '../components/ProjectCard';
-
-import { projectsData } from '../data/projectsData';
 
 export const ProjectsPage = () => {
   const projects: Project[] = projectsData;

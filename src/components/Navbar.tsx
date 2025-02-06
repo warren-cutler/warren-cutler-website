@@ -9,8 +9,8 @@ export const Navbar = () => {
         </div>
       </Link>
       <div className='externalLinks'>
-      <a href="https://www.linkedin.com/in/warren-cutler/"> <img src="/src/assets/linkedin-50.svg" height='30' width='30' alt="Click to visit my LinkedIn profile"/> </a> 
-      <a href="https://github.com/warren-cutler"> <img src="/src/assets/github-50.svg" height='30' width='30' alt="Click to visit my Github profile"/> </a> 
+      <a href="https://www.linkedin.com/in/warren-cutler/" target="_blank"> <img src="/src/assets/linkedin-50.svg" height='30' width='30' alt="Click to visit my LinkedIn profile"/> </a> 
+      <a href="https://github.com/warren-cutler" target="_blank"> <img src="/src/assets/github-50.svg" height='30' width='30' alt="Click to visit my Github profile"/> </a> 
       </div>
       <div className='internalLinks'>
         <Link to='/projects'>

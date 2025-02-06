@@ -1,7 +1,18 @@
-export const ResumePage =  () => {
+//types
+import { Job } from '../types';
+//data
+import { jobsData } from '../data/jobsData';
+//components
+import { JobCard } from '../components/JobCard'
 
+export const ResumePage = () => {
+  const jobs: Job[] = jobsData;
 
-    return (
-        <div className='resumePage'>Resume Page Coming Soon</div>
-    )
-}
+  return (
+    <div className='resumeContainer'>
+      {jobs.map((job, idx) => {
+        return <JobCard key={'Job-' + idx} {...job}></JobCard>;
+      })}
+    </div>
+  );
+};
