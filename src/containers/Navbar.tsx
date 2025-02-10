@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 //components
-import { PrimaryButton } from '../components/PrimaryButton';
+import { Button } from '../components/Button';
 
 export const Navbar = () => {
   return (
@@ -31,13 +31,13 @@ export const Navbar = () => {
       </div>
       <div className='flex justify-around grow'>
         <Link to='/projects'>
-          <PrimaryButton buttonText={'Projects'}/>
+          <Button>Projects</Button>
         </Link>
         <Link to='/resume'>
-        <PrimaryButton buttonText={'Resume'}/>
+          <Button>Resume</Button>
         </Link>
         <Link to='/about'>
-        <PrimaryButton buttonText={'About'}/>
+          <Button>About</Button>
         </Link>
       </div>
     </div>
