@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
   return (
-    <div className='navBar'>
+    <div className="flex align-middle bg-primary-700 rounded-xl">
       <Link to='/'>
         <div className='headshotLogo'>
           <img src='/src/assets/wc-headshot.jpg' width='100' height='100' alt='Warren Cutler headshot; click to return to website landing page'></img>
