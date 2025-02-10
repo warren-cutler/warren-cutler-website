@@ -2,8 +2,8 @@
 import { Routes, Route } from 'react-router-dom';
 
 //components
-import { Navbar } from './components/Navbar';
-import { Footer } from './components/Footer';
+import { Navbar } from './containers/Navbar';
+import { Footer } from './containers/Footer';
 import { ProjectsPage } from './containers/ProjectsPage';
 import { LandingPage } from './containers/LandingPage';
 import { ResumePage } from './containers/ResumePage';
