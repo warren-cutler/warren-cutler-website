@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
 
 //components
-import { Button } from '../components/Button';
+import { Button } from '../components/generics/Button';
+import { NavBar } from '../components/generics/NavBar';
 
-export const Navbar = () => {
+export const Header = () => {
   return (
-    <div className='flex bg-primary-700 rounded-xl items-center px-5 m-5 py-1 justify-around min-w-sm'>
+    <NavBar>
       <Link to='/'>
         <img
           className='rounded-full w-25 h-25'
@@ -40,6 +41,6 @@ export const Navbar = () => {
           <Button>About</Button>
         </Link>
       </div>
-    </div>
+    </NavBar>
   );
 };

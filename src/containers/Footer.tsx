@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
 
 //components
-import { Button } from '../components/Button';
+import { Button } from '../components/generics/Button';
+import {NavBar} from '../components/generics/NavBar'
 
 export const Footer = () => {
   const currentTime = new Date();
 
   return (
-    <div className='flex-col bg-primary-700 text-primary-950 rounded-xl items-center px-5 m-5 py-1 justify-items-center min-w-sm'>
+    <NavBar orientation={"col"}>
       <Link to='/contact'>
         <Button size={'thin'}>Contact Me</Button>
       </Link>
@@ -30,6 +31,6 @@ export const Footer = () => {
           </a>
         </p>
       </div>
-    </div>
+    </NavBar>
   );
 };

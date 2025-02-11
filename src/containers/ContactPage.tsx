@@ -1,5 +1,8 @@
 import { FormEvent, useState } from 'react';
 
+//components
+import { Button } from '../components/generics/Button';
+
 export const ContactPage = () => {
   const [userName, setUserName] = useState('');
   const [userEmail, setUserEmail] = useState('');
@@ -8,9 +11,9 @@ export const ContactPage = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     alert('email sent');
-    setUserName('')
-    setUserEmail('')
-    setUserMessage('')
+    setUserName('');
+    setUserEmail('');
+    setUserMessage('');
   };
 
   return (
@@ -36,7 +39,9 @@ export const ContactPage = () => {
           value={userMessage}
           onChange={(e) => setUserMessage(e.target.value)}
         ></textarea>
-        <button type="submit">Send Message</button>
+        <Button size={'thin'} bordered={true}>
+          Send
+        </Button>
       </form>
     </div>
   );

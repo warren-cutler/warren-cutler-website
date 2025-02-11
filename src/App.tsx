@@ -2,7 +2,7 @@
 import { Routes, Route } from 'react-router-dom';
 
 //components
-import { Navbar } from './containers/Navbar';
+import { Header } from './containers/Header';
 import { Footer } from './containers/Footer';
 import { ProjectsPage } from './containers/ProjectsPage';
 import { LandingPage } from './containers/LandingPage';
@@ -13,7 +13,7 @@ import { AboutPage } from './containers/AboutPage';
 const App = () => {
   return (
     <div>
-      <Navbar />
+      <Header />
       <Routes>
         <Route path='/' element={<LandingPage />} />
         <Route path='/projects' element={<ProjectsPage />} />

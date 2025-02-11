@@ -4,7 +4,7 @@ import { Job } from '../types';
 import { jobsData } from '../data/jobsData';
 //components
 import { JobCard } from '../components/JobCard';
-import { Button } from '../components/Button';
+import { Button } from '../components/generics/Button';
 
 export const ResumePage = () => {
   const jobs: Job[] = jobsData;
@@ -16,7 +16,9 @@ export const ResumePage = () => {
       })}
       <div className='self-center'>
         <a href='/src/assets/cutler_resume.pdf' target='_blank'>
-          <Button size={'thick'} primary={false} bordered={true}>Full Resume (PDF)</Button>
+          <Button size={'thick'} primary={false} bordered={true}>
+            Full Resume (PDF)
+          </Button>
         </a>
       </div>
     </div>
