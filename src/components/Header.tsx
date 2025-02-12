@@ -1,20 +1,20 @@
 import { Link } from 'react-router-dom';
 
 //components
-import { Button } from '../components/generics/Button';
-import { NavBar } from '../components/generics/NavBar';
+import { Button } from './generics/Button';
+import { NavBar } from './generics/NavBar';
 
 export const Header = () => {
   return (
     <NavBar>
-      <Link to='/'>
+      <Link to='/' className='shrink-0'>
         <img
-          className='rounded-full w-25 h-25'
+          className='rounded-full w-20 h-20'
           src='/src/assets/wc-headshot.jpg'
           alt='Warren Cutler headshot; click to return to website landing page'
         ></img>
       </Link>
-      <div className='flex-col px-3'>
+      <div className='flex-col px-3 shrink-1'>
         <a href='https://www.linkedin.com/in/warren-cutler/' target='_blank'>
           <img
             className='w-7 h-7 mb-2'

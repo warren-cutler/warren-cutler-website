@@ -2,13 +2,13 @@
 import { Routes, Route } from 'react-router-dom';
 
 //components
-import { Header } from './containers/Header';
-import { Footer } from './containers/Footer';
-import { ProjectsPage } from './containers/ProjectsPage';
-import { LandingPage } from './containers/LandingPage';
-import { ResumePage } from './containers/ResumePage';
-import { ContactPage } from './containers/ContactPage';
-import { AboutPage } from './containers/AboutPage';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
+import { ProjectsPage } from './pages/ProjectsPage';
+import { LandingPage } from './pages/LandingPage';
+import { ResumePage } from './pages/ResumePage';
+import { ContactPage } from './pages/ContactPage';
+import { AboutPage } from './pages/AboutPage';
 
 const App = () => {
   return (

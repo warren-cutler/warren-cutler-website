@@ -5,12 +5,13 @@ import { jobsData } from '../data/jobsData';
 //components
 import { JobCard } from '../components/JobCard';
 import { Button } from '../components/generics/Button';
+import { Card } from '../components/generics/Card';
 
 export const ResumePage = () => {
   const jobs: Job[] = jobsData;
 
   return (
-    <div className='resumeContainer'>
+    <Card orientation='col'>
       {jobs.map((job, idx) => {
         return <JobCard key={'Job-' + idx} {...job}></JobCard>;
       })}
@@ -21,6 +22,6 @@ export const ResumePage = () => {
           </Button>
         </a>
       </div>
-    </div>
+    </Card>
   );
 };
