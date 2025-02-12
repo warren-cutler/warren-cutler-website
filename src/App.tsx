@@ -12,7 +12,7 @@ import { AboutPage } from './pages/AboutPage';
 
 const App = () => {
   return (
-    <div>
+    <div className='flex flex-col text-primary-950 bg-primary-200 dark:bg-primary-950'>
       <Header />
       <Routes>
         <Route path='/' element={<LandingPage />} />
@@ -21,7 +21,7 @@ const App = () => {
         <Route path='/about' element={<AboutPage />} />
         <Route path='/contact' element={<ContactPage />} />
       </Routes>
-      <Footer />
+      <Footer/>
     </div>
   );
 };

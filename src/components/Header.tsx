@@ -6,7 +6,7 @@ import { NavBar } from './generics/NavBar';
 
 export const Header = () => {
   return (
-    <NavBar>
+    <NavBar className='flex mx-5 my-3 px-2 py-1 min-w-sm'>
       <Link to='/' className='shrink-0'>
         <img
           className='rounded-full w-20 h-20'

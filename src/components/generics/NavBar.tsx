@@ -2,16 +2,22 @@ import cx from 'classnames';
 import React from 'react';
 
 interface NavBarProps {
-  orientation?: 'row' | 'col';
+  outline?: boolean;
+  className?: string;
   children: React.ReactNode;
 }
 
-export const NavBar = ({ orientation = 'row', children }: NavBarProps) => {
+export const NavBar = ({
+  className,
+  outline = true,
+  children,
+}: NavBarProps) => {
   return (
     <div
       className={cx(
-        'flex bg-primary-700 rounded-xl items-center px-5 m-5 py-1 justify-around min-w-sm',
-        orientation == 'col' ? 'flex-col' : ''
+        'flex bg-primary-700 rounded-2xl items-center min-w-sm drop-shadow-def',
+        outline ? 'outline border-primary-950' : '',
+        className
       )}
     >
       {children}

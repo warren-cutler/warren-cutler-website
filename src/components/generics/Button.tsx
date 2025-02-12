@@ -22,7 +22,7 @@ export const Button = ({
 
   const colorStyle = useMemo(() => {
     if (primary)
-      return `bg-primary-300    outline-primary-950 text-primary-950 hover:text-secondary-950 hover:bg-secondary-300 hover:outline-secondary-950`;
+      return `bg-primary-300 outline-primary-950 text-primary-950 hover:text-secondary-950 hover:bg-secondary-300 hover:outline-secondary-950`;
     if (!primary)
       return `bg-secondary-300  outline-secondary-950  text-secondary-950 hover:text-primary-950 hover:bg-primary-300  hover:outline-primary-950`;
   }, [primary]);
@@ -30,7 +30,7 @@ export const Button = ({
   return (
     <button
       className={cx(
-        'cursor-pointer rounded-lg duration-300 ease-in hover:outline mx-2',
+        'cursor-pointer rounded-lg duration-300 ease-in hover:outline mx-2 drop-shadow-def',
         bordered ? 'outline' : '',
         colorStyle,
         sizeStyle

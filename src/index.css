@@ -24,44 +24,16 @@
   --color-secondary-800: #52289f;
   --color-secondary-900: #4a258d;
   --color-secondary-950: #2d165f;
+
+  --drop-shadow-def: 2px 2px 1px rgb(0, 0, 0, 0.3);
 }
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #04243a;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  min-width: 320px;
-  min-height: 100vh;
-  overflow-x: hidden;
-  scrollbar-gutter: stable both-edges;
-}
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

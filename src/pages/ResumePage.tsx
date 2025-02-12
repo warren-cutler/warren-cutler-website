@@ -14,7 +14,7 @@ export const ResumePage = () => {
     <div className='flex flex-col px-5 m-5 py-1 justify-start min-w-sm'>
       {jobs.map((job) => {
         return (
-          <Card orientation='col'>
+          <Card>
             <div className='flex items-center justify-between'>
               <a href={job.companyUrl} target='_blank'>
                 <img
