@@ -9,7 +9,7 @@ export const Header = () => {
     <NavBar className='flex mx-5 my-3 px-2 py-1 min-w-sm'>
       <Link to='/' className='shrink-0'>
         <img
-          className='rounded-full w-20 h-20'
+          className='rounded-full w-20 h-20 hover:border hover:border-primary-950 drop-shadow-def'
           src='/src/assets/wc-headshot.jpg'
           alt='Warren Cutler headshot; click to return to website landing page'
         ></img>

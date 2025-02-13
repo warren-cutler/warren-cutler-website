@@ -26,7 +26,7 @@ export const Button = ({
     if (primary)
       return `bg-primary-300 outline-primary-950 text-primary-950 hover:text-secondary-950 hover:bg-secondary-300 hover:outline-secondary-950`;
     if (!primary)
-      return `bg-secondary-300  outline-secondary-950  text-secondary-950 hover:text-primary-950 hover:bg-primary-300  hover:outline-primary-950`;
+      return `bg-secondary-300  outline-secondary-950  text-secondary-950 hover:text-secondary-300 hover:bg-secondary-950  hover:outline-primary-950`;
   }, [primary]);
 
   return (
