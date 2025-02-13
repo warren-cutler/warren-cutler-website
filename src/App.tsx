@@ -12,7 +12,7 @@ import { AboutPage } from './pages/AboutPage';
 
 const App = () => {
   return (
-    <div className='flex flex-col text-primary-950 bg-primary-200 dark:bg-primary-950'>
+    <div className='flex flex-col items-center text-primary-950 bg-primary-200 dark:bg-primary-950 min-h-[100vh]' >
       <Header />
       <Routes>
         <Route path='/' element={<LandingPage />} />

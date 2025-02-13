@@ -5,6 +5,7 @@ interface ButtonProps {
   size?: 'thin' | 'normal' | 'thick';
   primary?: boolean;
   bordered?: boolean;
+  className?: string;
   children: React.ReactNode;
 }
 
@@ -12,6 +13,7 @@ export const Button = ({
   size = 'normal',
   primary = true,
   bordered = false,
+  className,
   children,
 }: ButtonProps) => {
   const sizeStyle = useMemo(() => {
@@ -30,7 +32,8 @@ export const Button = ({
   return (
     <button
       className={cx(
-        'cursor-pointer rounded-lg duration-300 ease-in hover:outline mx-2 drop-shadow-def',
+        className,
+        'cursor-pointer rounded-lg duration-300 ease-in hover:outline  drop-shadow-def disabled:opacity-75',
         bordered ? 'outline' : '',
         colorStyle,
         sizeStyle

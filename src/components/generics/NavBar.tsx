@@ -15,9 +15,9 @@ export const NavBar = ({
   return (
     <div
       className={cx(
-        'flex bg-primary-700 rounded-2xl items-center min-w-sm drop-shadow-def',
-        outline ? 'outline border-primary-950' : '',
-        className
+        className,
+        'self-stretch flex bg-primary-700 rounded-2xl items-center min-w-sm drop-shadow-def',
+        outline ? 'outline border-primary-950' : ''
       )}
     >
       {children}
