@@ -1,20 +1,66 @@
-import { FormEvent, useState } from 'react';
+import { FormEvent, useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 
 //components
 import { Button } from '../components/generics/Button';
 import { Card } from '../components/generics/Card';
 
 export const ContactPage = () => {
+  emailjs.init({ publicKey: 'ijwY9zSqCS7_hhmoZ' });
+
+  //form input values
   const [userName, setUserName] = useState('');
   const [userEmail, setUserEmail] = useState('');
   const [userMessage, setUserMessage] = useState('');
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
+  //form input error messaging
+  const [nameError, setNameError] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const [messageError, setMessageError] = useState(false);
+
+  const nameErrorWarning = 'Please include your name!';
+  const emailErrorWarning = 'Invalid email';
+  const messageErrorWarning = "Please don't send me an empty message!";
+
+  //check userEmail field for valid address (on change)
+  useEffect(() => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!regex.test(userEmail) && userEmail) {
+      setEmailError(true);
+    } else setEmailError(false);
+  }, [userEmail]);
+
+  //on submit, send message if all fields are valid
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert('email sent');
-    setUserName('');
-    setUserEmail('');
-    setUserMessage('');
+
+    if (!validFormSubmit()) return;
+
+    emailjs
+      .send('website_contact_form', 'contact_form_template', {
+        userName,
+        userEmail,
+        userMessage,
+      })
+      .then(() => {
+        alert("Thanks for your message! I'll be in touch soon.");
+        setUserName('');
+        setUserEmail('');
+        setUserMessage('');
+        setNameError(false);
+        setMessageError(false);
+        return;
+      });
+  };
+
+  const validFormSubmit = (): boolean => {
+    if (userName === '') setNameError(true);
+    if (userMessage === '') setMessageError(true);
+
+    if (userName === '' || userMessage === '' || emailError) {
+      console.log('error in input field(s)');
+      return false;
+    } else return true;
   };
 
   return (
@@ -25,7 +71,12 @@ export const ContactPage = () => {
         onSubmit={handleSubmit}
       >
         <div className='flex flex-col min-w-xs'>
-          <label>Name</label>
+          <div className='flex justify-between'>
+            <label>Name</label>{' '}
+            <p className='justify-self-end text-red-400 italic drop-shadow-def'>
+              {nameError ? nameErrorWarning : ''}
+            </p>
+          </div>
           <input
             className='bg-primary-200 rounded-lg border border-primary-950 text-primary-950 placeholder:text-secondary-950 placeholder:italic px-2 focus:bg-secondary-300 focus:outline-0'
             type='text'
@@ -36,7 +87,12 @@ export const ContactPage = () => {
           />
         </div>
         <div className='flex flex-col min-w-xs'>
-          <label>Email</label>
+          <div className='flex justify-between'>
+            <label>Email</label>{' '}
+            <p className='justify-self-end text-red-400 italic drop-shadow-def'>
+              {emailError ? emailErrorWarning : ''}
+            </p>
+          </div>
           <input
             className='bg-primary-200 rounded-lg border border-primary-950  text-primary-950  placeholder:text-secondary-950 placeholder:italic px-2  focus:bg-secondary-300 focus:outline-0'
             type='email'
@@ -47,7 +103,12 @@ export const ContactPage = () => {
           />
         </div>
         <div className='flex flex-col col-span-full'>
-          <label>Message</label>
+          <div className='flex justify-between'>
+            <label>Message</label>{' '}
+            <p className='justify-self-end text-red-400 italic drop-shadow-def'>
+              {messageError ? messageErrorWarning : ''}
+            </p>
+          </div>
           <textarea
             className='min-h-20 bg-primary-200 rounded-lg border border-primary-950  text-primary-950  placeholder:text-secondary-950 placeholder:italic px-2 min-w-xs  focus:bg-secondary-300 focus:outline-0 field-sizing-content'
             name='message'
