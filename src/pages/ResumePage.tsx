@@ -11,7 +11,7 @@ export const ResumePage = () => {
   const jobs: Job[] = jobsData;
 
   return (
-    <Card className='flex flex-col mx-5 my-3 px-2 py-1 min-w-sm max-w-4xl'>
+    <Card className='flex flex-col mx-5 my-3 px-2 py-1 min-w-sm max-w-5xl'>
       {jobs.map((job) => {
         return (
             <div className='flex flex-col mt-2 mb-3'>
