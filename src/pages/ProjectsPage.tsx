@@ -13,8 +13,8 @@ export const ProjectsPage = () => {
       {projects.map((project, idx) => {
         return (
           <Card key={idx} className='flex flex-col items-center p-2 max-w-xl'>
-            <img src={project.imagePath} height='200' width='200'></img>
-            <h2>{project.name}</h2>
+            <img className='drop-shadow-def' src={project.imagePath} height='200' width='200'></img>
+            <h2 className='text-2xl font-bold'>{project.name}</h2>
             <p className='text-center'>{project.description}</p>
             {project.linkUrl ? (
               <a className='underline' href={project.linkUrl}>

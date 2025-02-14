@@ -11,35 +11,34 @@ export const ResumePage = () => {
   const jobs: Job[] = jobsData;
 
   return (
-    <div className='flex flex-col px-5 m-5 py-1 justify-start min-w-sm'>
+    <Card className='flex flex-col mx-5 my-3 px-2 py-1 min-w-sm max-w-4xl'>
       {jobs.map((job) => {
         return (
-          <Card>
-            <div className='flex items-center justify-between'>
-              <a href={job.companyUrl} target='_blank'>
-                <img
+            <div className='flex flex-col mt-2 mb-3'>
+              <div className='flex items-center m-1 gap-3 font-bold lg:text-lg xl:text-xl'><a className='shrink-0' href={job.companyUrl} target='_blank'>
+                <img className='rounded-md drop-shadow-def hover:outline-2 hover:outline-primary-950'
                   src={job.companyLogo}
-                  height='50'
-                  width='50'
+                  height='70'
+                  width='70'
                   alt='Click to visit the employer website'
                 />
               </a>
-              <p>{job.company}</p>
-              <p>{job.location}</p>
-            </div>
+              <p className='grow '>{job.company}</p>
+              <p className='text-end'>{job.location}</p>
+              </div>
             {job.roles.map((role, idx) => {
               return <RoleCard key={'Role-' + idx} {...role}></RoleCard>;
             })}
-          </Card>
+          </div>
         );
       })}
       <div className='self-center'>
         <a href='/src/assets/cutler_resume.pdf' target='_blank'>
-          <Button size={'thick'} primary={false} bordered={true}>
+          <Button className='mb-2' size={'thick'} primary={false} bordered={true}>
             Full Resume (PDF)
           </Button>
         </a>
       </div>
-    </div>
+    </Card>
   );
 };

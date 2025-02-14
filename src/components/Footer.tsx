@@ -10,7 +10,7 @@ export const Footer = () => {
   return (
     <NavBar className='flex flex-col mx-5 my-3 px-2 py-1 min-w-sm'>
       <Link to='/contact'>
-        <Button size={'thin'}>Contact Me</Button>
+        <Button className='mt-2' size={'thin'}>Contact Me</Button>
       </Link>
       <p>
         Copyright {currentTime.getFullYear()} Warren Cutler. All Rights
