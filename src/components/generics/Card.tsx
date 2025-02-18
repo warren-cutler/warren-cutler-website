@@ -1,4 +1,4 @@
-import cx from 'classnames';
+import cx from "classnames";
 
 interface CardProps {
   background?: boolean;
@@ -17,9 +17,9 @@ export const Card = ({
     <div
       className={cx(
         className,
-        ' rounded-xl drop-shadow-def',
-        background ? ' bg-primary-500' : '',
-        border ? 'border border-primary-950' : ''
+        "drop-shadow-def rounded-xl",
+        background ? "bg-primary-500" : "",
+        border ? "border-primary-950 border" : "",
       )}
     >
       {children}

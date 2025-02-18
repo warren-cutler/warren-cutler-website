@@ -1,5 +1,3 @@
-
-
 export type Project = {
   id: number;
   name: string;
@@ -16,14 +14,14 @@ export type Job = {
   url: string;
   location: string;
   roles: Role[];
-}
+};
 
 export type Role = {
   title: string;
   dateStart: Date;
   dateEnd: Date;
   details: string[];
-}
+};
 
 export type Education = {
   id: number;
@@ -33,4 +31,4 @@ export type Education = {
   location: string;
   degree: string;
   dateEnd: Date;
-}
+};

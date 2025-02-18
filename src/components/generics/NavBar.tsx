@@ -1,5 +1,5 @@
-import cx from 'classnames';
-import React from 'react';
+import cx from "classnames";
+import React from "react";
 
 interface NavBarProps {
   outline?: boolean;
@@ -16,8 +16,8 @@ export const NavBar = ({
     <div
       className={cx(
         className,
-        'self-stretch flex bg-primary-700 rounded-2xl items-center min-w-sm drop-shadow-def',
-        outline ? 'outline border-primary-950' : ''
+        "bg-primary-700 drop-shadow-def flex min-w-sm items-center self-stretch rounded-2xl",
+        outline ? "border-primary-950 outline" : "",
       )}
     >
       {children}
