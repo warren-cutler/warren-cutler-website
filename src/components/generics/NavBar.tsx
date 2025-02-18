@@ -9,7 +9,7 @@ interface NavBarProps {
 
 export const NavBar = ({
   className,
-  outline = true,
+  outline = false,
   children,
 }: NavBarProps) => {
   return (

@@ -12,8 +12,8 @@ export type Project = {
 export type Job = {
   id: number;
   company: string;
-  companyLogo: string;
-  companyUrl: string;
+  logo: string;
+  url: string;
   location: string;
   roles: Role[];
 }
@@ -23,4 +23,14 @@ export type Role = {
   dateStart: Date;
   dateEnd: Date;
   details: string[];
+}
+
+export type Education = {
+  id: number;
+  school: string;
+  logo: string;
+  url: string;
+  location: string;
+  degree: string;
+  dateEnd: Date;
 }

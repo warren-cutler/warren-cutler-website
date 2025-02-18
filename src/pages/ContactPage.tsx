@@ -53,6 +53,7 @@ export const ContactPage = () => {
       });
   };
 
+  //is form filled out appropriately?
   const validFormSubmit = (): boolean => {
     if (userName === '') setNameError(true);
     if (userMessage === '') setMessageError(true);
@@ -70,10 +71,11 @@ export const ContactPage = () => {
         id='contact-form'
         onSubmit={handleSubmit}
       >
+        {/* name input */}
         <div className='flex flex-col min-w-xs'>
           <div className='flex justify-between'>
             <label>Name</label>{' '}
-            <p className='justify-self-end text-red-400 italic drop-shadow-def'>
+            <p className='justify-self-end text-red-600 italic font-bold drop'>
               {nameError ? nameErrorWarning : ''}
             </p>
           </div>
@@ -86,10 +88,11 @@ export const ContactPage = () => {
             onChange={(e) => setUserName(e.target.value)}
           />
         </div>
+        {/* email input */}
         <div className='flex flex-col min-w-xs'>
           <div className='flex justify-between'>
             <label>Email</label>{' '}
-            <p className='justify-self-end text-red-400 italic drop-shadow-def'>
+            <p className='justify-self-end text-red-600 italic font-bold drop'>
               {emailError ? emailErrorWarning : ''}
             </p>
           </div>
@@ -102,10 +105,11 @@ export const ContactPage = () => {
             onChange={(e) => setUserEmail(e.target.value)}
           />
         </div>
+        {/* message input */}
         <div className='flex flex-col col-span-full'>
           <div className='flex justify-between'>
             <label>Message</label>{' '}
-            <p className='justify-self-end text-red-400 italic drop-shadow-def'>
+            <p className='justify-self-end text-red-600 italic font-bold drop'>
               {messageError ? messageErrorWarning : ''}
             </p>
           </div>
@@ -117,6 +121,7 @@ export const ContactPage = () => {
             onChange={(e) => setUserMessage(e.target.value)}
           ></textarea>
         </div>
+        {/* send message button */}
         <Button
           className='mx-3 md:col-start-2 justify-self-end'
           size={'thick'}

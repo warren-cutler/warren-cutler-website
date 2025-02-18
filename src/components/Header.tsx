@@ -33,14 +33,14 @@ export const Header = () => {
         </a>
       </div>
       <div className='flex justify-around grow'>
+        <Link to='/'>
+          <Button>About</Button>
+        </Link>
         <Link to='/projects'>
           <Button>Projects</Button>
         </Link>
         <Link to='/resume'>
           <Button>Resume</Button>
-        </Link>
-        <Link to='/about'>
-          <Button>About</Button>
         </Link>
       </div>
     </NavBar>
