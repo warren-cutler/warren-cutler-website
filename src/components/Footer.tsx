@@ -8,7 +8,7 @@ export const Footer = () => {
   const currentTime = new Date();
 
   return (
-    <NavBar className="mx-5 my-3 flex min-w-sm flex-col px-2 py-1">
+    <NavBar className="my-3 flex min-w-sm flex-col px-2 py-1 sm:mx-5">
       <Link to="/contact">
         <Button className="mt-2" size={"thin"}>
           Contact Me
