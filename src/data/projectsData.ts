@@ -5,7 +5,7 @@ export const projectsData: Project[] = [
     id: 1,
     name: "A11y Root",
     description:
-      "Full stack open source VS Code Extension (and web dashboard) for analyzing your projects' web accessibility compliance; sponsored by OSLabs.",
+      "Full stack open source VS Code Extension (and accompanying web dashboard) for analyzing your projects' web accessibility compliance; sponsored by OSLabs.",
     imagePath: "/src/assets/a11yroot-ext-cropped.gif",
     linkUrl: "https://a11yroot.dev/",
     status: "Launched! (beta)",
@@ -15,7 +15,7 @@ export const projectsData: Project[] = [
     name: "Disc-ography",
     description:
       "A website dedicated to tracking your disc golf collection(s) virtually, searching for new discs from a range of manufacturers, and more!",
-    imagePath: "/src/assets/wc-headshot.jpg",
+    imagePath: "/src/assets/discography.gif",
     linkUrl: "",
     status: "Coming Soon!",
   },
