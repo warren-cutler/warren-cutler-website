@@ -17,7 +17,7 @@ export const ProjectsPage = () => {
               className="drop-shadow-def rounded-md"
               src={project.imagePath}
             ></img>
-            <div className="flex grow flex-col justify-stretch text-center">
+            <div className="flex grow flex-col justify-around text-center">
               <h2 className="text-2xl font-bold">{project.name}</h2>
               <p>{project.description}</p>
               {project.linkUrl ? (

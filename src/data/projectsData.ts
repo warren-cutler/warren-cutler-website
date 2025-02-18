@@ -23,8 +23,8 @@ export const projectsData: Project[] = [
     id: 3,
     name: "AltSprout",
     description:
-      "Visual Content Management SPA - utilizing LLM AI to generate descriptive alt text for images.",
-    imagePath: "/src/assets/wc-headshot.jpg",
+      "Visual Content Management SPA - utilizing LLM API to generate descriptive alt text for images.",
+    imagePath: "/src/assets/altsprout.gif",
     linkUrl: "",
     status: "Proof of Concept",
   },
