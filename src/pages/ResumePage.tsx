@@ -72,7 +72,7 @@ export const ResumePage = () => {
       <div className="self-center">
         <a href="/src/assets/cutler_resume.pdf" target="_blank">
           <Button
-            className="mt-2"
+            className="m-2"
             size={"thick"}
             primary={false}
             bordered={true}

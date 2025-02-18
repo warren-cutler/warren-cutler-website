@@ -12,12 +12,12 @@ export const ProjectsPage = () => {
     <div className="m-5 grid min-w-xs grid-cols-[repeat(auto-fill,minmax(320px,550px))] justify-center gap-[2vw] self-stretch px-5 py-1">
       {projects.map((project, idx) => {
         return (
-          <Card key={idx} className="flex max-w-xl flex-col items-center p-2">
+          <Card key={idx} className="flex max-w-xl flex-col items-center justify-start text-center p-2">
             <img
-              className="drop-shadow-def rounded-md"
+              className="drop-shadow-def rounded-md max-h-140"
               src={project.imagePath}
             ></img>
-            <div className="flex grow flex-col justify-around text-center">
+        
               <h2 className="text-2xl font-bold">{project.name}</h2>
               <p>{project.description}</p>
               {project.linkUrl ? (
@@ -30,8 +30,8 @@ export const ProjectsPage = () => {
               ) : (
                 ""
               )}
-            </div>
-            <div className="flex self-end">
+           
+            <div className="flex grow self-end">
               <p className="self-end italic">{project.status}</p>
             </div>
           </Card>
