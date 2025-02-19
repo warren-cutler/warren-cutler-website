@@ -14,7 +14,7 @@ export const Footer = () => {
           Contact Me
         </Button>
       </Link>
-      <p>
+      <p className='text-sm md:text-base'>
         Copyright {currentTime.getFullYear()} Warren Cutler. All Rights
         Reserved.
       </p>
