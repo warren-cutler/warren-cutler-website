@@ -19,7 +19,7 @@ export const ProjectsPage = () => {
             ></img>
         
               <h2 className="text-2xl font-bold">{project.name}</h2>
-              <p>{project.description}</p>
+              <p className=''>{project.description}</p>
               {project.linkUrl ? (
                 <a
                   className="hover:text-secondary-800 underline duration-200 ease-in"
