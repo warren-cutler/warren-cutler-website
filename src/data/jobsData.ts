@@ -34,7 +34,7 @@ export const jobsData: Job[] = [
   {
     id: 1,
     company: "Sense Labs / Schneider Electric",
-    logo: "/src/assets/SenseLogo.jpg",
+    logo: "/assets/SenseLogo.jpg",
     url: "https://sense.com/",
     location: "Cambridge, MA / Foxborough, MA",
     roles: [senseRole],
@@ -42,7 +42,7 @@ export const jobsData: Job[] = [
   {
     id: 2,
     company: "Cognex Corporation",
-    logo: "/src/assets/CognexLogo.jpg",
+    logo: "/assets/CognexLogo.jpg",
     url: "https://www.cognex.com/",
     location: "Natick, MA",
     roles: [cognexNPIRole, cognexSustainingRole],

@@ -6,7 +6,7 @@ export const HomePage = () => {
     <div className="flex flex-col items-center justify-around lg:flex-row">
       <Card className="mx-2 my-3 flex max-w-2xl min-w-xs flex-col items-center">
         <img
-          src="/src/assets/wc-outdoor.jpg"
+          src="/assets/wc-outdoor.jpg"
           className="max-h-50 rounded-3xl p-3 md:max-h-75 lg:max-h-90 xl:max-h-120"
         ></img>
         <h2 className="font-bold md:text-lg lg:text-xl xl:text-2xl">

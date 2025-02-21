@@ -10,7 +10,7 @@ export const Header = () => {
       <Link to="/" className="shrink-0">
         <img
           className="hover:border-primary-950 drop-shadow-def h-20 w-20 rounded-full hover:border-2"
-          src="/src/assets/wc-headshot.jpg"
+          src="/assets/wc-headshot.jpg"
           alt="Warren Cutler headshot; click to return to website landing page"
         ></img>
       </Link>

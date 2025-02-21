@@ -6,7 +6,7 @@ export const projectsData: Project[] = [
     name: "A11y Root",
     description:
       "Full stack open source VS Code Extension (and accompanying web dashboard) for analyzing your projects' web accessibility compliance; sponsored by OSLabs.",
-    imagePath: "/src/assets/a11yroot-ext-cropped.gif",
+    imagePath: "/assets/a11yroot-ext-cropped.gif",
     linkUrl: "https://a11yroot.dev/",
     status: "Launched! (beta)",
   },
@@ -15,7 +15,7 @@ export const projectsData: Project[] = [
     name: "Disc-ography",
     description:
       "A website dedicated to tracking your disc golf collection(s) virtually, searching for new discs from a range of manufacturers, and more!",
-    imagePath: "/src/assets/discography.gif",
+    imagePath: "/assets/discography.gif",
     linkUrl: "",
     status: "Coming Soon!",
   },
@@ -24,7 +24,7 @@ export const projectsData: Project[] = [
     name: "AltSprout",
     description:
       "Visual Content Management SPA - utilizing LLM API to generate descriptive alt text for images. Incorporates context provided by users into AI prompting for more personalized results.",
-    imagePath: "/src/assets/altsprout.gif",
+    imagePath: "/assets/altsprout.gif",
     linkUrl: "",
     status: "Proof of Concept",
   },
