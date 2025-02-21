@@ -70,7 +70,7 @@ export const ResumePage = () => {
       </Card>
       {/* resume download button */}
       <div className="self-center">
-        <a href="/src/assets/cutler_resume.pdf" target="_blank">
+        <a href="/assets/warren-cutler-resume.pdf" target="_blank">
           <Button
             className="m-2"
             size={"thick"}
