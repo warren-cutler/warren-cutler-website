@@ -8,6 +8,6 @@ export const educationData: Education[] = [
     url: "https://www.northeastern.edu/",
     location: "Boston, MA",
     degree: "B.S. Mechanical Engineering",
-    dateEnd: new Date("May, 2018"),
+    dateEnd: new Date("2018-05-01"),
   },
 ];

@@ -58,6 +58,7 @@ export const ResumePage = () => {
                   <p>{edu.degree}</p>
                   <p>
                     {edu.dateEnd.toLocaleDateString("en-US", {
+                      timeZone: "UTC",
                       month: "short",
                       year: "numeric",
                     })}

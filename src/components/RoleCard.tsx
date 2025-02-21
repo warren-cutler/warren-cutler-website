@@ -8,11 +8,13 @@ export const RoleCard = (role: Role) => {
         <p>{role.title}</p>
         <p className="">
           {role.dateStart.toLocaleDateString("en-US", {
+            timeZone: "UTC",
             month: "short",
             year: "numeric",
           })}
           {" - "}
           {role.dateEnd.toLocaleDateString("en-US", {
+            timeZone: "UTC",
             month: "short",
             year: "numeric",
           })}
