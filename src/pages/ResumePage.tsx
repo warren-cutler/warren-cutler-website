@@ -15,7 +15,7 @@ export const ResumePage = () => {
   return (
     // work experience card
     <div className="flex flex-col">
-      <Card className="mx-5 my-3 flex max-w-5xl min-w-xs flex-col px-5 py-2">
+      <Card className="mx-5 my-3 flex max-w-5xl min-w-xs flex-col">
         {jobs.map((job) => {
           return (
             <div className="mt-2 mb-3 flex flex-col">
@@ -42,7 +42,7 @@ export const ResumePage = () => {
         })}
       </Card>
       {/* education card */}
-      <Card className="mx-5 my-3 flex max-w-5xl min-w-xs flex-col px-5 py-2">
+      <Card className="mx-5 my-3 flex max-w-5xl min-w-xs flex-col">
         {education.map((edu) => {
           return (
             <div className="mt-2 mb-3 flex flex-col">
