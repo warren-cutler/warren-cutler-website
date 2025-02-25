@@ -17,7 +17,7 @@ export const Card = ({
     <div
       className={cx(
         className,
-        "drop-shadow-def rounded-xl",
+        "drop-shadow-def rounded-xl px-5 py-2",
         background ? "bg-primary-500" : "",
         border ? "border-primary-950 border" : "",
       )}

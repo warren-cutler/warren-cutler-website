@@ -9,10 +9,10 @@ export const ProjectsPage = () => {
   const projects: Project[] = projectsData;
 
   return (
-    <div className="m-5 grid min-w-xs grid-cols-[repeat(auto-fill,minmax(320px,550px))] justify-center gap-[2vw] self-stretch px-5 py-1">
+    <div className="m-5 grid min-w-xs grid-cols-[repeat(auto-fill,minmax(320px,550px))] justify-center gap-[2vw] self-stretch">
       {projects.map((project, idx) => {
         return (
-          <Card key={idx} className="flex max-w-xl flex-col items-center justify-start text-center p-2">
+          <Card key={idx} className="flex max-w-xl flex-col items-center justify-start text-center">
             <img
               className="drop-shadow-def rounded-md max-h-140"
               src={project.imagePath}
