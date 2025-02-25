@@ -123,11 +123,10 @@ export const ContactPage = () => {
         </div>
         {/* send message button */}
         <Button
-          className="mx-3 justify-self-end md:col-start-2"
-          size={"thick"}
+          className="font-title mx-3 my-1 justify-self-end text-2xl md:col-start-2"
           bordered={true}
         >
-          Send
+          <span className="align-[-2px]">Send</span>
         </Button>
       </form>
     </Card>
