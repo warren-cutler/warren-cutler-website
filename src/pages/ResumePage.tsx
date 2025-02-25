@@ -27,10 +27,10 @@ export const ResumePage = () => {
                     alt="Click to visit the employer website"
                   />
                 </a>
-                <p className="grow font-bold lg:text-lg xl:text-xl">
+                <p className="font-title grow text-xl md:text-2xl lg:text-3xl">
                   {job.company}
                 </p>
-                <p className="text-end text-sm italic sm:flex-row md:text-base xl:text-lg">
+                <p className="font-title text-end text-lg md:text-xl lg:text-2xl">
                   {job.location}
                 </p>
               </div>
@@ -54,10 +54,10 @@ export const ResumePage = () => {
                     alt="Click to visit the school website"
                   />
                 </a>
-                <p className="grow font-bold lg:text-lg xl:text-xl">
+                <p className="font-title grow text-xl md:text-2xl lg:text-3xl">
                   {edu.school}
                 </p>
-                <p className="text-end text-sm italic sm:flex-row md:text-base xl:text-lg">
+                <p className="font-title text-end text-lg md:text-xl lg:text-2xl">
                   {edu.location}
                 </p>
               </div>
@@ -78,15 +78,15 @@ export const ResumePage = () => {
         })}
       </Card>
       {/* resume download button */}
-      <div className="self-center">
+      <div className="font-title self-center text-lg md:text-xl lg:text-2xl">
         <a href="/assets/warren-cutler-resume.pdf" target="_blank">
           <Button
-            className="m-2"
+            className="m-2 pt-3"
             size={"thick"}
             primary={false}
             bordered={true}
           >
-            Full Resume (PDF)
+            <p>Full Resume (PDF)</p>
           </Button>
         </a>
       </div>

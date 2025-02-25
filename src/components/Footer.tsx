@@ -8,13 +8,13 @@ export const Footer = () => {
   const currentTime = new Date();
 
   return (
-    <NavBar className="my-3 flex min-w-sm flex-col px-2 py-1 sm:mx-5">
+    <NavBar className="my-2 flex min-w-sm flex-col px-2 py-1 sm:mx-5">
       <Link to="/contact">
-        <Button className="mt-2" size={"thin"}>
-          Contact Me
+        <Button className="font-title m-1 pt-1.5 text-xl" size={"thin"}>
+          <p>Contact Me</p>
         </Button>
       </Link>
-      <p className='text-sm md:text-base'>
+      <p className="text-sm md:text-base">
         Copyright {currentTime.getFullYear()} Warren Cutler. All Rights
         Reserved.
       </p>

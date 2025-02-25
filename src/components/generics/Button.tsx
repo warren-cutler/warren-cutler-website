@@ -17,9 +17,9 @@ export const Button = ({
   children,
 }: ButtonProps) => {
   const sizeStyle = useMemo(() => {
-    if (size === "thin") return "px-0.5 py-0";
-    if (size === "normal") return "px-2 py-1";
-    if (size === "thick") return "px-6 py-2";
+    if (size === "thin") return "px-1 py-1";
+    if (size === "normal") return "px-3 py-2";
+    if (size === "thick") return "px-6 py-3";
   }, [size]);
 
   const colorStyle = useMemo(() => {

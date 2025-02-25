@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import "tailwindcss";
 
 @theme {
+  --font-title: "Bebas Neue", serif;
+  --font-subtitle: "JetBrains Mono", sans-serif;
+
   --color-primary-50: #fcf6f0;
   --color-primary-100: #f9ebdb;
   --color-primary-200: #f2d3b6;
@@ -29,7 +33,8 @@
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: PT-sans, sans-serif;
+
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
