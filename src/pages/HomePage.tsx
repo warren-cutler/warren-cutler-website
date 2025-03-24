@@ -13,7 +13,7 @@ export const HomePage = () => {
           Warren Cutler
         </h2>
         <h3 className="p-1 text-sm italic md:text-base lg:text-lg xl:text-xl">
-          Fullstack Software Engineer
+          Manufacturing Engineer and Fullstack Web Developer
         </h3>
         <h3 className="pb-1 text-sm italic lg:text-base xl:text-lg">
           Boston, MA
@@ -25,11 +25,18 @@ export const HomePage = () => {
         </h1>
         <div className="bg-primary-950 my-3 h-0.5 w-25 rounded-full md:h-1 md:w-35 lg:h-1.5 lg:w-50"></div>
         <p className="px-2 text-sm md:text-base">
-          Combining the strongly-typed functionality of TypeScript with the
-          modularity of React, I design front&#x2011;ends with code maintenance
-          and human readability in mind. I pride myself on utilizing styling in
-          a way that enhances the user experience across devices, whilst
-          avoiding cluttering core content.
+          Leveraging my 6+ years of product development and manufacturing
+          industry experience, combined with CS class work and self taught
+          programming skills, I love to constantly learn new technologies and
+          skills, while designing and building projects along the way.
+        </p>
+
+        <p className="mt-5 px-2 text-sm md:text-base">
+          Utilizing the strongly-typed functionality of TypeScript with the
+          modularity of React, I design front&#x2011;ends with mobile-first
+          design and component reusability in mind. I pride myself on utilizing
+          styling in a way that enhances the user experience, whilst avoiding
+          cluttering core content.
         </p>
         <p className="mt-5 px-2 text-sm md:text-base">
           Server&#x2011;side, I employ REST API best practices, prioritizing
